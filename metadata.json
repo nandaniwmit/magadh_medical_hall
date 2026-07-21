@@ -1,0 +1,6 @@
+{
+  "name": "Magadh Medical Hall",
+  "description": "Your Trusted Medical Store for Genuine Medicines & Healthcare Needs in Tekari, Bihar. Shop tablets, capsules, surgical items, baby care, and daily medical essentials.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
