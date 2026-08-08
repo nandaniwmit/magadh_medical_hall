@@ -40,7 +40,7 @@ export default function SEO({
     setMetaTag('property', 'og:title', title);
     setMetaTag('property', 'og:description', description);
     setMetaTag('property', 'og:type', 'website');
-    setMetaTag('property', 'og:url', `https://magadh-medical-hall.example.com/${path}`);
+    setMetaTag('property', 'og:url', `https://magadh-medical-hall.vercel.app/${path}`);
     setMetaTag('property', 'og:site_name', BUSINESS_INFO.name);
     // Since we generated pharmacy_hero, we can point to a simulated relative path or the real host image
     setMetaTag('property', 'og:image', 'https://picsum.photos/seed/magadh/1200/630');
@@ -58,7 +58,7 @@ export default function SEO({
       canonical.setAttribute('rel', 'canonical');
       document.head.appendChild(canonical);
     }
-    canonical.setAttribute('href', `https://magadh-medical-hall.example.com/${path}`);
+    canonical.setAttribute('href', `https://magadh-medical-hall.vercel.app/${path}`);
 
     // 6. JSON-LD Schemas
     const schemas = [
@@ -71,7 +71,7 @@ export default function SEO({
         'description': description,
         'image': 'https://picsum.photos/seed/magadh/800/600',
         'telephone': BUSINESS_INFO.phone,
-        'url': 'https://magadh-medical-hall.example.com',
+        'url': 'https://magadh-medical-hall.vercel.app',
         'priceRange': '$$',
         'address': {
           '@type': 'PostalAddress',
@@ -126,13 +126,13 @@ export default function SEO({
             '@type': 'ListItem',
             'position': 1,
             'name': 'Home',
-            'item': 'https://magadh-medical-hall.example.com/'
+            'item': 'https://magadh-medical-hall.vercel.app/'
           },
           {
             '@type': 'ListItem',
             'position': 2,
             'name': path ? path.charAt(0).toUpperCase() + path.slice(1) : 'Store',
-            'item': `https://magadh-medical-hall.example.com/${path}`
+            'item': `https://magadh-medical-hall.vercel.app/${path}`
           }
         ]
       }
